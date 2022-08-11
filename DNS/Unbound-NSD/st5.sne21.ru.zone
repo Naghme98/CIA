@@ -1,0 +1,26 @@
+ORIGIN st5.sne21.ru.
+$TTL    604800
+@       IN      SOA     ns.st5.sne21.ru. hostmasterst5.sne21.ru.(
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800         ; Negative Cache TTL
+			)
+			
+        IN      NS      ns.st5.sne21.ru.
+
+ns      IN      A          192.168.1.10(ip-address-of-our-server)
+        IN      MX    10   mail1.st5.sne21.ru
+        IN      MX    10   mail2.st5.sne21.ru
+
+
+web.mail.st5.sne21.ru.         IN    CNAME     mail1.st5.sne21.ru
+web.mail.prof.st5.sne21.ru.    IN    CNAME     mail2.st5.sne21.ru
+
+
+ns.st5.sne21.ru.     IN      A       192.168.1.10 (ip-address)
+mail1.sne21.ru.      IN      A       192.168.1.10
+mail2.sne21.ru.      IN      A       192.168.1.10
+st5.sne21.ru.        IN      A       192.168.1.10
+
